@@ -1,5 +1,7 @@
 Projeto Condominium
 
+EM DESENVOLVIMENTO 🚨🚨🚨
+
 Criação do projeto condominium usando as tecnologias:
 
 React.js, styled-components.
@@ -25,3 +27,7 @@ Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e 
 ✅ Reuniões:
 
 - Sera exibido uma lista com todas as reuniões, criação de reunião, atualização da reunião e exclusao da reunião.
+
+Para testar o Projeto:
+
+1️⃣ No prompt de comando fazer o comando 👉 git clone 
