@@ -12,7 +12,13 @@ API USADA PARA AS FUNCIONALIDADES:
 
 ➡ api-condominium LINK:  https://github.com/Roger-dornelles/api-condominium
 
-Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e Reuniões.
+❌Para poder acessar o sistema usar:
+
+◻Aparamento: 101
+
+◻senha: 123456
+
+✔Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e Reuniões.
 
 ✅ Avisos:
 
