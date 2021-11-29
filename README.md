@@ -6,6 +6,12 @@ Criação do projeto condominium usando as tecnologias:
 
 React.js, styled-components.
 
+✔ Para poder ter acesso a todas as funcionalidades do projeto usar a API juntamente com o Projeto:
+
+API USADA PARA AS FUNCIONALIDADES:
+
+➡ api-condominium 
+
 Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e Reuniões.
 
 ✅ Avisos:
@@ -30,4 +36,8 @@ Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e 
 
 Para testar o Projeto:
 
-1️⃣ No prompt de comando fazer o comando 👉 git clone 
+1️⃣ No prompt de comando( CMD ) fazer o comando 👉 git clone https://github.com/Roger-dornelles/Condominium
+
+2️⃣ instalar todas as dependencias do projeto no prompt de comando( CMD ) dentro da pasta do projeto fazer o comando 👉 npm install e/ou yarn add
+
+3️⃣ Apos ter instalado toadas as dependencias no prompt de comando( CMD ) fazer o comando 👉 npm start 
