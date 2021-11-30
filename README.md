@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+Projeto Condominium
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EM DESENVOLVIMENTO 🚨🚨🚨
 
-## Available Scripts
+Criação do projeto condominium usando as tecnologias:
 
-In the project directory, you can run:
+React.js, styled-components.
 
-### `npm start`
+✔ Para poder ter acesso a todas as funcionalidades do projeto usar a API juntamente com o Projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+API USADA PARA AS FUNCIONALIDADES:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+➡ api-condominium LINK:  https://github.com/Roger-dornelles/api-condominium
 
-### `npm test`
+❌Para poder acessar o sistema usar:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+◻Aparamento: 101
 
-### `npm run build`
+◻senha: 123456
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✔Projeto contara com as Areas de Avisos, Reclamações, Apartamentos, Reservas e Reuniões.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ Avisos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Exibição de todos os avisos do condominio para manutençoes.
 
-### `npm run eject`
+✅ Reclamações:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Exibição de todas as reclamações dos usuarios, Criação de uma reclamaçõa ou serviço, atualização da reclamação ou serviço e exclusão da sua reclamação ou serviço.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Apartamentos:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Sera exibido uma lista com o Apartamento, nome e contatos dos proprietarios.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+✅ Reservas:
 
-## Learn More
+- Sera exibido uma lista com todas as reservas, criação de uma reserva, atualização da reserva e exclusão da reserva do usuario.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ Reuniões:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Sera exibido uma lista com todas as reuniões, criação de reunião, atualização da reunião e exclusao da reunião.
 
-### Code Splitting
+Para testar o Projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1️⃣ No prompt de comando( CMD ) fazer o comando 👉 git clone https://github.com/Roger-dornelles/Condominium
 
-### Analyzing the Bundle Size
+2️⃣ instalar todas as dependencias do projeto no prompt de comando( CMD ) dentro da pasta do projeto fazer o comando 👉 npm install e/ou yarn add
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3️⃣ Apos ter instalado toadas as dependencias no prompt de comando( CMD ) fazer o comando 👉 npm start 
