@@ -12,6 +12,7 @@ const Aside = ()=>{
   const handleClose = ()=>{
     Cookies.remove('token')
     navegate("/");
+    window.location.reload();
   }
   return (
     <Container>

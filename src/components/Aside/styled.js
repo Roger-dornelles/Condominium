@@ -42,7 +42,7 @@ export const Container = styled.div`
         flex-direction: column;
         
 
-        a{
+        a,button{
           text-decoration: none;
           font-size: 1.5rem;
           color: #fff;
@@ -57,6 +57,13 @@ export const Container = styled.div`
         }
       }
 
+      button{
+        border:0;
+        outline: 0;
+        cursor: pointer;
+        background-color: #1B8EF2;
+        text-align: left;
+      }
     }
 
   }
