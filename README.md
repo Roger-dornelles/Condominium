@@ -4,7 +4,7 @@ EM DESENVOLVIMENTO 🚨🚨🚨
 
 Criação do projeto condominium usando as tecnologias:
 
-React.js, styled-components.
+React.js, styled-components, axios.
 
 ✔ Para poder ter acesso a todas as funcionalidades do projeto usar a API juntamente com o Projeto:
 
@@ -14,7 +14,7 @@ API USADA PARA AS FUNCIONALIDADES:
 
 ❌Para poder acessar o sistema usar:
 
-◻Aparamento: 101
+◻Apartamento: 101
 
 ◻senha: 123456
 
@@ -46,4 +46,4 @@ Para testar o Projeto:
 
 2️⃣ instalar todas as dependencias do projeto no prompt de comando( CMD ) dentro da pasta do projeto fazer o comando 👉 npm install e/ou yarn add
 
-3️⃣ Apos ter instalado toadas as dependencias no prompt de comando( CMD ) fazer o comando 👉 npm start 
+3️⃣ Apos ter instalado todas as dependencias no prompt de comando( CMD ) fazer o comando 👉 npm start 
