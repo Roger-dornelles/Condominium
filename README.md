@@ -14,7 +14,7 @@ API USADA PARA AS FUNCIONALIDADES:
 
 ❌Para poder acessar o sistema usar:
 
-◻Aparamento: 101
+◻Apartamento: 101
 
 ◻senha: 123456
 
