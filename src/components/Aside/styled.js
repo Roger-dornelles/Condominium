@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -36,6 +37,7 @@ export const Container = styled.div`
       flex-direction: column;
       margin-top:7rem;
 
+
       nav{
         display: flex;
         justify-content: center;
@@ -64,6 +66,40 @@ export const Container = styled.div`
         background-color: #1B8EF2;
         text-align: left;
       }
+    }
+
+    .config{
+      display: flex;
+      flex: 1;
+      padding-bottom: 30px;
+      margin-left: 30px;
+      align-items: flex-end;
+
+      b{
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+
+        a{
+          display: none;
+          margin-left:8px;
+          font-size: 1rem;
+          text-decoration: none;
+          color: #fff;
+
+        }
+        &:hover{
+          
+          a{
+            display: inline-block;
+          }
+
+        }
+
+
+      }
+
     }
 
   }

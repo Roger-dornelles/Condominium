@@ -60,6 +60,7 @@ const Complaint = ()=>{
 
   const handleConfirmComplaint = async(e)=>{
     e.preventDefault();
+    console.log(image)
     if(description === ''){
       setWarning('Adicione uma descrição...')
       setTimeout(()=>{
@@ -67,8 +68,9 @@ const Complaint = ()=>{
       },2500);
     }else{
 
-      if(image !== ''){
+      if(image){
         await api.createComplaint(description,image);
+        return;
       }else{
         
         await api.createComplaint(description);

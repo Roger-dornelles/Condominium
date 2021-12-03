@@ -2,6 +2,7 @@ import React from 'react';
 import Cookies from 'js-cookie';
 import { Link,useNavigate } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai";
+import { FaRegSun } from "react-icons/fa";
 
 import {Container } from './styled';
 
@@ -13,10 +14,12 @@ const Aside = ()=>{
     Cookies.remove('token')
     navegate("/");
     window.location.reload();
-  }
+  };
+
+
   return (
     <Container>
-          <aside>
+      <aside>
         <div className="logo">
           <p><AiFillHome/></p>
           <span>Painel</span>
@@ -31,6 +34,9 @@ const Aside = ()=>{
             <Link to="/Reunioes">Reuniões</Link>
             <button onClick={handleClose}>Sair</button>
           </nav>
+        </div>
+        <div className="config">
+          <b><FaRegSun /><Link to="/user/info">configurações</Link></b>
         </div>
       </aside>
     </Container>

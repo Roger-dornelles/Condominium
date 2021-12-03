@@ -14,7 +14,7 @@ export default {
     let json = await result.data;
     return json;
   },
-  //atualizar Aviso'
+  //atualizar Aviso
   updateNotice: async(id,title, description)=>{
     let result = await api.put(`/notice/${id}`,{title,description});
     let json = await result.data;
