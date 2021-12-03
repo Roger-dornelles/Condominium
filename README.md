@@ -4,7 +4,7 @@ EM DESENVOLVIMENTO 🚨🚨🚨
 
 Criação do projeto condominium usando as tecnologias:
 
-React.js, styled-components.
+React.js, styled-components, axios.
 
 ✔ Para poder ter acesso a todas as funcionalidades do projeto usar a API juntamente com o Projeto:
 
