@@ -37,5 +37,11 @@ export default {
     let result = await api.put(`/user/info/${id}`,body);
     let json = await result.data;
     return json;
+  },
+  //cadastrar usuario 
+  createUser: async(name, apartament, contact ,password)=>{
+    let result = await api.post('/user/new',{name, apartament, contact ,password});
+    let json = await result.data;
+    return json;
   }
 }

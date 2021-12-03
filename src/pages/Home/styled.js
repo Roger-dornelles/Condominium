@@ -88,6 +88,91 @@ export const HomePage = styled.div`
           }
         }
       }
+
+      button {
+        cursor: pointer;
+        border: 0;
+        background-color: rgba(0,0,0,0.0);
+        color: #FFF;
+      }
+    }
+
+    .container-newUser {
+      width: 70%;
+      background-color: rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius:10px;
+      padding:30px 15px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+
+      .warning,.error{
+        width: 100%;
+        background-color:yellow;
+        color: #000;
+        padding:3px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .error{
+        background-color:rgb(255,0,0);
+      }
+
+      form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        label{
+          width: 100%;
+          margin-bottom:12px;
+
+          input{
+            width: 99%;
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            border-bottom: 1px solid #FFF;
+            outline: none;
+            text-align: center;
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom:12px;
+            
+          }
+        }
+      }
+      .buttons-newUser{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        button{
+          width: 30%;
+          border: 0;
+          cursor: pointer;
+          padding:5px 0;
+          border-radius:5px;
+          font-size: 1rem;
+
+
+          &:hover{
+            background-color:#cccc;
+          }
+        }
+        button[type=submit]{
+          background-color:rgb(110,255,0);
+
+          &:hover{
+            background-color: rgb(110,215,0);
+          }
+        }
+      }
     }
   }
 `;
