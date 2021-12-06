@@ -71,12 +71,11 @@ const Home = ()=>{
     e.preventDefault();
     
     if(newName && newApartament && newContact !== ''){
-
       if(newPassword !== confirmNewPassword){
         setWarning('Senhas diferentes....');
         setTimeout(()=>{
           setWarning('');
-        },2500)
+        },2500);
       }else{
         const patterns = ['(99) 99999-9999'];
         newContact = mask(newContact, patterns);
