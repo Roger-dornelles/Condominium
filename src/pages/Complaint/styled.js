@@ -119,14 +119,16 @@ export const Container = styled.div`
     padding-top: 80px;
     font-size:1rem;
     overflow: auto;
+    margin-left: 250px;
 
     .buttons{
       display: flex;
       justify-content: space-between;
-      width: 40%;
+      width: 50%;
+      flex-wrap: wrap;
 
       button{
-        margin-right: 12px;
+        margin: 12px;
         cursor: pointer;
         border: 0;
         outline: 0;
@@ -279,6 +281,89 @@ export const Container = styled.div`
       }
     }
     }
+  }
+
+  @media screen and (max-width: 1280px){
+
+.description{
+  width: 100%;
+  margin-left: 0px;
+
+  .buttons{
+    width: 50%;
+    flex-wrap: wrap;
+    padding:5px;
+    button{
+      width: 200px;
+      font-size: 1.2rem;
+      margin: 10px;
+    }
+  }
+
+  .description-complaints{
+    width: 70%;
+  }
+
+  .modal{
+    width:100%;
+//position:relative;
+
+  .modalAdd{
+    width: 100%;
+    //position: absolute;
+    form{
+      width: 90%;
+        label{
+          margin-bottom: 10px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+}
+
+
+  @media screen and (max-width: 950px){
+
+    .description{
+      width: 100%;
+
+      .buttons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding:5px;
+        button{
+          width: 150px;
+          font-size: 1.2rem;
+          margin: 10px;
+        }
+      }
+
+      .description-complaints{
+        width: 80%;
+      }
+
+      .modal{
+        width:100%;
+
+        .modalAdd{
+        width: 100%;
+
+        form{
+          width: 90%;
+            label{
+              margin-bottom: 10px;
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+    
   }
 
 `;

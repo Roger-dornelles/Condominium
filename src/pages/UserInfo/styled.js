@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const UserPage = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color:#CCCC;
   display: flex;
   align-items: center;
@@ -15,6 +15,7 @@ export const UserPage = styled.div`
   a{
     font-size: 1.2rem;
     color: rgb(255,0,0);
+    margin-bottom: 30px;
   }
   
   .info-user{
@@ -126,6 +127,45 @@ export const UserPage = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1290px) {
+
+  .info-user{
+    width: 70%;
+  }
+  a{
+    margin-bottom: 30px;
+  }
+}
+
+  @media screen and (max-width: 950px) {
+
+  .info-user{
+      width: 95%;
+    }
+    a{
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+
+  .info-user{
+    width: 95%;
+    
+    .info-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .info-button{
+        margin-right: 0px;
+      }
+    }
+  }
+  a{
+    margin-bottom: 30px;
+  }
+}
 
 
 `;

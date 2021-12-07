@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color:#dcdcdc;
   display: flex;
-  flex-direction: row;
   height: 100vh;
-
+  position: relative;
+  
 
   .notices{
     width: 100%;
@@ -13,6 +13,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex: 1;
+    margin-left:250px;
     flex-direction: column;
     overflow: auto;
 
@@ -357,4 +358,143 @@ export const Container = styled.div`
     }
   }
 
+  @media screen and (max-width: 1280px) {
+
+.notices{
+  width: 60%;
+  font-size: 1.3rem;
+  margin-left:0px;
+
+  .buttons-notices{
+    display: flex;
+    width: 50%;
+    margin-left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    button{
+      width: 180px;
+      margin: 15px;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+      padding:5px 15px;
+      background-color: #1B8EF2;
+      border-radius:7px;
+      color: #FFF;
+      font-size: 1rem;
+
+      &:hover{
+        background-color: #1B6EF7;
+      }
+
+    }
+  }
+
+  .info{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    .info-card{
+      width: 80%;
+      margin-left: 0px;
+      flex-wrap: wrap;
+    }
+
+    .noticeAll{
+      width: 100%;
+
+      form{
+        width: 100%;
+      }
+    }
+  }
+
+}
+}
+
+  @media screen and (max-width: 950px) {
+
+    .notices{
+      width: 100%;
+
+      .buttons-notices{
+        display: flex;
+        width: 70%;
+        flex-wrap: wrap;
+        button{
+          width: 150px;
+          margin: 15px;
+          font-size: 1rem;
+
+        }
+      }
+
+      .info{
+        width: 80%;
+
+        .info-card{
+          width: 80%;
+          margin-left: 0px;
+        }
+
+        .noticeAll{
+          width: 88%;
+
+          form{
+            width: 100%;
+          }
+        }
+        .modal-description{
+          width: 100%;
+  
+          .modal-item{
+            width: 95%;
+  
+            form{
+              width: 100%;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  @media screen and (max-width: 365px) {
+
+    .notices{
+      width: 100%;
+
+      .buttons-notices{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        margin-right: 50px;
+        button{
+          width: 100px;
+          margin: 5px 7px;
+          cursor: pointer;
+          border: 0;
+          outline: 0;
+          padding:5px ;
+          background-color: #1B8EF2;
+          border-radius:7px;
+          color: #FFF;
+          font-size: 1rem;
+
+          &:hover{
+            background-color: #1B6EF7;
+          }
+
+        }
+      }
+
+  }
+  }
 `;

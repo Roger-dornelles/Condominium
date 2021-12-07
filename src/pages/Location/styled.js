@@ -4,27 +4,29 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   background-color:#dcdcdc;
+  overflow: auto;
   
   .description{
-    display: flex;
-    width: 100%;
     height: 100vh;
+    display: flex;
+    width: 80%;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
+    margin-left: 250px;
     
     h2{
       margin-top:50px;
     }
 
     .buttons-location{
-      width:40%;
+      width:60%;
       display: flex;
       justify-content: space-around;
       margin-bottom: 12px;
+      flex-wrap: wrap;
 
       button{
-        margin-right: 12px;
+        margin: 12px;
         cursor: pointer;
         border: 0;
         outline: 0;
@@ -42,9 +44,9 @@ export const Container = styled.div`
     }
 
     .location-description{
-      width:60%;
+      width:70%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       flex-wrap: wrap;
 
       .descriptions-items{
@@ -241,6 +243,84 @@ export const Container = styled.div`
                 color: #fff;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:1290px){
+    .description{
+      width: 80%;
+      margin-left: 0px;
+      margin:0 auto;
+      
+      .buttons-location{
+        width: 80%;
+
+        button{
+          margin: 10px;
+          padding: 10px;
+        }
+      }
+
+      .location-description{
+        width: 90%;
+        justify-content: center;
+      }
+
+      .reservation{
+        width: 97%;
+        form{
+          width: 95%;
+        }
+      }
+
+      .modal{
+        position: absolute;
+        width: 100%;
+        .modal-description{
+          width: 98%;
+          form{
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:950px){
+    .description{
+      width: 100%;
+      
+      .buttons-location{
+        width: 80%;
+
+        button{
+          margin: 10px;
+          padding: 10px;
+        }
+      }
+
+      .location-description{
+        width: 90%;
+        justify-content: center;
+      }
+
+      .reservation{
+        width: 97%;
+        form{
+          width: 95%;
+        }
+      }
+
+      .modal{
+        position: absolute;
+        width: 100%;
+        .modal-description{
+          width: 98%;
+          form{
+            width: 95%;
           }
         }
       }

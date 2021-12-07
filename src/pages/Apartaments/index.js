@@ -22,9 +22,9 @@ const Apartament = ()=>{
   },[]);
 
 
-  return (
+  return (<>
     <Container >
-      <Aside />
+    <Aside />
       <div className="apartament">
         <h2>Apartamentos</h2>
 
@@ -54,6 +54,7 @@ const Apartament = ()=>{
         </div>
       </div>
     </Container>
+    </>
   )
 };
 

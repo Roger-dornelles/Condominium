@@ -12,20 +12,22 @@ export const Container = styled.div`
     overflow: auto;
     flex-direction: column;
     align-items: center;
+    margin-left:250px;
 
     h2{
       margin-top:50px;
     }
 
     .buttons-meetings{
-      width:45%;
+      width:55%;
       display: flex;
       justify-content: space-around;
       margin-bottom: 12px;
       flex-wrap: wrap;
 
       button{
-        margin-right: 12px;
+        flex-wrap: wrap;
+        margin: 12px;
         cursor: pointer;
         border: 0;
         outline: 0;
@@ -46,11 +48,12 @@ export const Container = styled.div`
       width: 60%;
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 50px;
 
       .meetings-descriptions{
-        width: 270px;
+        width: 220px;
         min-height:300px;
         display: flex;
         flex-direction: column;
@@ -263,6 +266,81 @@ export const Container = styled.div`
               }
             }
           }
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 1280px ) {
+    .container{
+      width: 100%;
+      margin-left: 0px;
+      .buttons-meetings{
+        width: 70%;
+
+        button{
+          margin: 12px;
+
+        }
+      }
+
+      .container-meetings{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+
+        .meetings-description{
+          width: 70%;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width:950px){
+    .container{
+      width: 100%;
+      .buttons-meetings{
+        width: 60%;
+
+        button{
+          margin: 12px;
+          margin-right: 0;
+        }
+      }
+
+      .container-meetings{
+        width: 100%;
+        justify-content: center;
+
+        .meetings-description{
+          width: 100%;
+        }
+
+        .create-meeting{
+          width: 95%;
+        }
+
+        .modal{
+          width: 100%;
+          .modal-description{
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:350px){
+    .container{
+      width: 100%;
+      .buttons-meetings{
+        width: 90%;
+
+        button{
+          margin: 12px;
+          margin-right: 0;
         }
       }
 

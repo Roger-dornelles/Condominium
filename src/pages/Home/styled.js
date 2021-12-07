@@ -175,4 +175,19 @@ export const HomePage = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1050px) {
+
+    .container {
+      width: 95%;
+      margin-top: 50px;
+      h2{
+        margin-top:20px;
+      }
+      .form-container{
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
 `;

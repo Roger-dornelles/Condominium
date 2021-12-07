@@ -152,42 +152,6 @@ const Complaint = ()=>{
     <Container>
       <Aside />
 
-      {modal && 
-      
-        <div className="modal">
-          {modalItemUpdate && 
-            <div className="modalAdd">
-              {warning && <p>{warning}</p>}
-              <h2>Editar Reclamação</h2>
-              <form onSubmit={handleUpdateOneComplaint}>
-                <label>
-                  Descrição: <textarea placeholder="descrição" value={updateDescription} onChange={e=>setUpdateDescription(e.target.value)}></textarea>
-                </label>
-                <label>
-                  *Adicionar 1 imagem:
-                  <input type="file" onChange={e=>setUpdateImage(e.target.files[0])}  />
-                  <span style={{color:'red'}}>Imagem não Obrigatorio.</span>
-                </label>
-
-                <label>
-                  Serviço concluido?
-                  <select onChange={e=>setOptions(e.target.value)}>
-                    <option value="">--------</option>
-                    <option value="true">Sim</option>
-                    <option value="false">Não</option>
-                  </select>
-                </label>
-                <div className="buttons-btn">
-                  <button type="reset" onClick={handleClose}>Cancelar</button>
-                  <button type="submit">Adicionar</button>
-                </div>
-              </form>
-            </div>
-          }
-
-        </div>
-      }
-
       <div className="description">
         <h2>Reclamações</h2>
         <div className="buttons">
@@ -236,6 +200,42 @@ const Complaint = ()=>{
               </form>
             </div>
           }
+
+{modal && 
+      
+      <div className="modal">
+        {modalItemUpdate && 
+          <div className="modalAdd">
+            {warning && <p>{warning}</p>}
+            <h2>Editar Reclamação</h2>
+            <form onSubmit={handleUpdateOneComplaint}>
+              <label>
+                Descrição: <textarea placeholder="descrição" value={updateDescription} onChange={e=>setUpdateDescription(e.target.value)}></textarea>
+              </label>
+              <label>
+                *Adicionar 1 imagem:
+                <input type="file" onChange={e=>setUpdateImage(e.target.files[0])}  />
+                <span style={{color:'red'}}>Imagem não Obrigatorio.</span>
+              </label>
+
+              <label>
+                Serviço concluido?
+                <select onChange={e=>setOptions(e.target.value)}>
+                  <option value="">--------</option>
+                  <option value="true">Sim</option>
+                  <option value="false">Não</option>
+                </select>
+              </label>
+              <div className="buttons-btn">
+                <button type="reset" onClick={handleClose}>Cancelar</button>
+                <button type="submit">Adicionar</button>
+              </div>
+            </form>
+          </div>
+        }
+
+      </div>
+    }
 
           {modalDelete && 
             deleteComplaint.map((item)=>{

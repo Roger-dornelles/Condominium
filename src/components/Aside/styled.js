@@ -4,16 +4,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 18%;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  aside{
+  .aside-desktop,.aside-mobile{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 220%;
+    padding: 0 12px;
     min-height:100vh;
     background-color: #1B8EF2;
 
-    .logo{
+    .logo-desktop,.logo-mobile{
       width: 100%;
       height: 3rem;
       display: flex;
@@ -30,7 +33,7 @@ export const Container = styled.div`
         display: flex;
       }
     }
-    .menu{
+    .menu-desktop,.menu-mobile{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,7 +71,7 @@ export const Container = styled.div`
       }
     }
 
-    .config{
+    .config-desktop,.config-mobile{
       display: flex;
       flex: 1;
       padding-bottom: 30px;
@@ -87,6 +90,9 @@ export const Container = styled.div`
           font-size: 1rem;
           text-decoration: none;
           color: #fff;
+          position: absolute;
+          margin-left:22px;
+
 
         }
         &:hover{
@@ -94,14 +100,72 @@ export const Container = styled.div`
           a{
             display: inline-block;
           }
-
         }
+      }
+    }
+  }
+
+  .menu-hamburguer{
+    display: none;
+    font-size: 2.2rem;
+  }
+
+  .aside-mobile{
+    display: none;
+  }
 
 
+
+  @media screen and (max-width: 1292px) {
+
+    .aside-desktop{
+      display: none;
+    }
+    .menu-hamburguer{
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left:10px;
+      z-index:9999;
+    }
+    .aside-mobile{
+      display: block;
+      min-width: 220%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index:999;
+
+      .menu-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
+      .config-mobile{
+        margin-top:50px;
+      }
     }
-
   }
+
+  @media screen and (max-width: 330px) {
+
+.aside-mobile{
+  display: block;
+  min-width: 220%;
+  padding-left: 50px;
+
+  .menu-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .config-mobile{
+    margin-top:50px;
+  }
+}
+}
 
 `;

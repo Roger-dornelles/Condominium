@@ -152,7 +152,7 @@ const Notices = ()=>{
       <div className="notices">
         <h2>Avisos</h2>
         <div className="buttons-notices">
-          <button onClick={handleChangeNoticesAll}>Exibir todos os avisos</button>
+          <button onClick={handleChangeNoticesAll}>Exibir avisos</button>
           <button onClick={handleAddNotice}>Adicionar Avisos</button>
           <button onClick={handleUpdateNotices}>Atualizar Aviso</button>
           <button onClick={handleDeleteNotice}>Excluir avisos</button>
