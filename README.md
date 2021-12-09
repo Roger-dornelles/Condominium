@@ -1,6 +1,5 @@
 Projeto Condominium
 
-EM DESENVOLVIMENTO 🚨🚨🚨
 
 Criação do projeto condominium usando as tecnologias:
 
