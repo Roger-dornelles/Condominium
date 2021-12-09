@@ -3,7 +3,8 @@ import axios from 'axios';
 const token = localStorage.getItem('token');
 
 const api = axios.create({
-  baseURL: 'https://api-condominium.herokuapp.com',
-  headers: {'Authorization': `Bearer ${token}`}
+  baseURL: 'http://localhost:5000',
+  headers: {'Authorization': `Bearer ${token}`
+}
 });
 export default api;
